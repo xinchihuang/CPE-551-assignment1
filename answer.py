@@ -138,3 +138,9 @@ def dictionary_nested():
 
 
 
+number()
+strings()
+list_1D()
+list_2D()
+dictionary()
+dictionary_nested()
