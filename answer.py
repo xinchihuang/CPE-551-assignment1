@@ -4,13 +4,19 @@
 Python Core object Types
 """
 
-
-def numbers_and_strings():
+def number():
+    """
+       This is to review numbers and basic operations.
+       """
+    # Write the value 4 to the power of 5 and assign it to variable x
+    x = 4 ** 5
+    # Write the value x divided by 3 and assign it to variable y
+    y = x/3
+    return x,y
+def strings():
     """
     This is to review numbers and strings and basic operations.
     """
-    # Write the value 4 to the power of 5 and assign it to variable x
-    x = 4**5
 
     # Assign a string "stevens" to a variable stevens
     stevens = "stevens"
@@ -27,10 +33,10 @@ def numbers_and_strings():
     # Replace "great" with "good" in variable m and assign it to a new variable good
     good = great.replace("great","good")
 
-    return x, stevens, stevens_7, length, great, good
+    return stevens, stevens_7, length, great, good
 
 
-def lists():
+def list_1D():
     """
     This is to review basic operations with lists.
     """
@@ -42,15 +48,18 @@ def lists():
     hoboken_list = hoboken.split(",")
 
     # Get the first item in the hoboken_list and assign it to a new variable hoboken_first_item
-    hoboken_first_item=hoboken_list[1]
+    hoboken_first_item=hoboken_list[0]
 
     l=[2,3,4,1,5,6,9,10,15,12,13,-2,-6,0,0]
-    # Sort list l
-    l = l.sort()
+    # Sort list l (make sure you use inplace sort)
+    l.sort()
 
-    # Get the 4th to 10th item in list l and assign them to a new list new_l
+    # Get the 4th to 10th item in sorted list l and assign them to a new list new_l
     new_l=l[3:10]
 
+    return hoboken,hoboken_list, hoboken_first_item, l, new_l
+
+def list_2D():
     # Create a 3 x 3 matrix A as nested list such that
     #   first row is [1, 4, 5]
     #   second row is [6, 10, 11]
@@ -66,13 +75,13 @@ def lists():
     a = A[-1][-1]
 
     # Get the item at row 2 and column 1 of A
-    b = A[2][1]
+    b = A[1][0]
 
 
-    return hoboken_list, hoboken_first_item, l, new_l, last_column, a, b
+    return A,last_column, a, b
 
 
-def dictionaries():
+def dictionary():
     """
     This is to review basic operations with dictionaries.
     """
@@ -89,7 +98,8 @@ def dictionaries():
     # Increase the quantity of f by 1
     
     fruit_dict["quantity"]+=1
-
+    return fruit_dict, f
+def dictionary_nested():
     # Create a nested dictionary Grace where:
     #   "name" => {"first_name" => "Grace", "last_name" => "Hopper"} (a dictionary)
     #   "jobs" => ["scientist", "engineer"] (a list)
@@ -99,7 +109,8 @@ def dictionaries():
         "jobs":["scientist", "engineer"],
         "age":85
     }
-
+    # Get the "last_name" from
+    last_name = Grace["name"]["last_name"]
     # Add "programmer" to the list of jobs Grace has
     Grace["jobs"].append("programmer")
 
@@ -107,12 +118,7 @@ def dictionaries():
     job = Grace["jobs"][2]
 
 
-    return fruit_dict, f, Grace, job
-
-
-# numbers_and_strings()
-# lists()
-fruit_dict, f, Grace, job=dictionaries()
+    return Grace,last_name, job
 
 
 
