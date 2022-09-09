@@ -45,12 +45,12 @@ def list_1D():
     """
     This is to review basic operations with lists.
     """
-    s = "\nhoboken,is,awesome,i,like,it\n"
+    s = " hoboken,is,awesome,i,like,it "
     #Remove whitespace characters on both side and assign it to a new variable hoboken.
 
     hoboken =
 
-    # Split variable hoboken on a delimiter into a list of substrings and assign it to a new variable hoboken_list.
+    # Split variable hoboken on a delimiter(comma) into a list of substrings and assign it to a new variable hoboken_list.
 
     hoboken_list =
 
@@ -120,7 +120,7 @@ def dictionary_nested():
 
     Grace =
 
-    # Get the value of key "last_name" from the subditionary of key "name" in dictionary Grace. (aka."Hopper")
+    # Get the value of key "last_name" from the subdictionary of key "name" in dictionary Grace. (aka."Hopper")
 
     last_name =
 
