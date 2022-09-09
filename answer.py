@@ -8,9 +8,9 @@ def number():
     """
        This is to review numbers and basic operations.
        """
-    # Write the value 4 to the power of 5 and assign it to variable x
+    # Write the value 4 to the power of 5 and assign it to variable x.
     x =
-    # Write the value x divided by 3 and assign it to variable y
+    # Write the value x divided by 3 and assign it to variable y.
     y =
     return x,y
 def strings():
@@ -34,7 +34,7 @@ def strings():
 
     great =
 
-    # Replace "great" with "good" in variable m and assign it to a new variable good.
+    # Replace "great" with "good" in variable great and assign it to a new variable good.
 
     good =
 
@@ -46,11 +46,11 @@ def list_1D():
     This is to review basic operations with lists.
     """
     s = "\nhoboken,is,awesome,i,like,it\n"
-    #Remove whitespace characters on both side and assign it to a new variable.
+    #Remove whitespace characters on both side and assign it to a new variable hoboken.
 
     hoboken =
 
-    # Split variable n on a delimiter space into a list of substrings and assign it to a new variable hoboken_list.
+    # Split variable hoboken on a delimiter into a list of substrings and assign it to a new variable hoboken_list.
 
     hoboken_list =
 
@@ -61,7 +61,7 @@ def list_1D():
     ####
     l=[2,3,4,1,5,6,9,10,15,12,13,-2,-6,0,0]
 
-    # Sort list l (make sure you use inplace sort).
+    # Inplace sort list l (use .sort() ).
 
 
     # Get the 4th to 10th item in sorted list l and assign them to a new list new_l.
@@ -103,12 +103,12 @@ def dictionary():
     #   "quantity" => 18
     #   "color" => "red"
     fruit_dict =
-
+    
     # Get the item in dictionary fruit_dict that the key "fruit" maps to.
 
     f =
 
-    # Increase the quantity of f by 1
+    # Increase the value that key "quantity" map to by 1.
 
 
     return fruit_dict, f
@@ -120,16 +120,16 @@ def dictionary_nested():
 
     Grace =
 
-    # Get the "last_name" from "name".
+    # Get the value of key "last_name" from the subditionary of key "name" in dictionary Grace. (aka."Hopper")
 
     last_name =
 
-    # Add "programmer" to the list of "jobs" Grace has.
+    # Add "programmer" to the list that key "jobs" maps to.
 
 
 
-    # Get the third job Grace has that you recently added.
-
+    # Get the third item in the list that key "job" maps to. (the item  you recently added)
+    
     job =
 
 
