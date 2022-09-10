@@ -78,9 +78,9 @@ def list_2D():
 
     A =
 
-    # Collect the items in the last column of matrix A using list comprehension and assign it to a new variable last_column.
+    # Collect the items in the last row of matrix A using list comprehension and assign it to a new variable last_column.
 
-    last_column =
+    last_row =
 
     # Get the item at the last row and last column of A.
 
