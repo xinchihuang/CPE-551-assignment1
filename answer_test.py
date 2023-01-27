@@ -89,7 +89,7 @@ class TestAnswer():
 
     def test_list_2D_A(self):
         TestAnswer.__total__ += 1
-        A,last_row, a, b = answer.list_2D()
+        A,last_column, a, b = answer.list_2D()
         assert (A == [[1, 4, 5],
                     [6, 10, 11],
                     [12, 17, 38]])
@@ -97,19 +97,19 @@ class TestAnswer():
 
     def test_list_2D_last_row(self):
         TestAnswer.__total__ += 1
-        A,last_row, a, b = answer.list_2D()
-        assert (last_row == [12, 17, 38])
+        A,last_column, a, b = answer.list_2D()
+        assert (last_column == [5,11,38])
         TestAnswer.__correct__ += 1
 
     def test_list_2D_a(self):
         TestAnswer.__total__ += 1
-        A,last_row, a, b = answer.list_2D()
+        A,last_column, a, b = answer.list_2D()
         assert (a == 38)
         TestAnswer.__correct__ += 1
 
     def test_list_2D_b(self):
         TestAnswer.__total__ += 1
-        A,last_row, a, b = answer.list_2D()
+        A,last_column, a, b = answer.list_2D()
         assert (b == 6)
         TestAnswer.__correct__ += 1
 
