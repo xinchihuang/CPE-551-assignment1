@@ -13,6 +13,7 @@ def number():
     # Write the value x divided by 3 and assign it to variable y.
     y =
     return x,y
+
 def strings():
     """
     This is to review numbers and strings and basic operations.
@@ -78,9 +79,9 @@ def list_2D():
 
     A =
 
-    # Collect the items in the last row of matrix A using list comprehension and assign it to a new variable last_row.
+    # Collect the items in the last column of matrix A using list comprehension and assign it to a new variable last_column.
 
-    last_row =
+    last_column =
 
     # Get the item at the last row and last column of A.
 
@@ -91,7 +92,7 @@ def list_2D():
     b =
 
 
-    return A,last_row, a, b
+    return A,last_column, a, b
 
 
 def dictionary():
@@ -144,3 +145,4 @@ list_1D()
 list_2D()
 dictionary()
 dictionary_nested()
+
